@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Characters from "./components/Characters";
 import Pagination from "./components/Pagination";
+import "./App.css";
 
 function App() {
   //nos permite crear un estado para poder guardar los datos de la api
@@ -26,12 +27,12 @@ function App() {
       .catch((error) => console.log(error));
   };
 
-  const onPrevious = () =>{
+  const onPrevious = () => {
     fetchCaracters(info.prev);
-  }
-  const onNext = () =>{
+  };
+  const onNext = () => {
     fetchCaracters(info.next);
-  }
+  };
 
   //ejecuta una sola vez cuando se renderisa ya que esta []
   useEffect(() => {
@@ -39,14 +40,24 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Navbar brand="Rick and Morty" />
+    <div className="fondo py-5">
+      <Navbar />
       <div className="container mt-5">
-        <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
+        <Pagination
+          prev={info.prev}
+          next={info.next}
+          onPrevious={onPrevious}
+          onNext={onNext}
+        />
         <Characters characters={characters} />
-        <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext}/>
+        <Pagination
+          prev={info.prev}
+          next={info.next}
+          onPrevious={onPrevious}
+          onNext={onNext}
+        />
       </div>
-    </>
+    </div>
   );
 }
 
