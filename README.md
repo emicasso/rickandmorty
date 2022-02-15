@@ -1,6 +1,6 @@
 <h1 align="center" style="border-bottom: none">
     <b>
-        <a href="rickandmortycedev.netlify.app">Rick and Morty App</a><br>
+        <a href="https://rickandmortycedev.netlify.app/">Rick and Morty App</a><br>
     </b>
     :collision:Lista de Personajes Completa:collision:<br>
 </h1>
@@ -10,7 +10,7 @@ App de reconocimiento de personajes a traves de llamada a la API.
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/emicasso/rickandmorty)
 
 ### Live Demo
-* [Weather-App](rickandmortycedev.netlify.app)
+* [Weather-App](https://rickandmortycedev.netlify.app/)
 
 ## Starting 🚀
 
