@@ -10,7 +10,7 @@ App de reconocimiento de personajes a traves de llamada a la API.
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/emicasso/rickandmorty)
 
 ### Live Demo
-* [Weather-App](https://rickandmortycedev.netlify.app/)
+* [RickAndMorty-App](https://rickandmortycedev.netlify.app/)
 
 ## Starting 🚀
 
